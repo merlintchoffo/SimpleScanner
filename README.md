@@ -4,9 +4,9 @@ Try out our turnkey handover security tool !
 
 ## Files
 
-- **Dockerfile**: Contains the instructions to build a Docker image for the scanner.
-- **run.sh**: The main script that performs the scan.
-- **README.md**: This file. Provides an overview of the project and usage instructions.
+- **Dockerfile**: contains the instructions to build a Docker image for the scanner
+- **run.sh**: main script performing the scan
+- **README.md**: provides an overview of the project and usage instructions
 
 ## Quickstart
 ### Get SimpleScanner
