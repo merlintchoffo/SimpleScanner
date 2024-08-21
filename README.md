@@ -8,3 +8,7 @@ Try out our turnkey handover security tool !
 ```
 docker run dcenters/simple-scanner
 ```
+### Usage
+```
+$ run.sh
+```
