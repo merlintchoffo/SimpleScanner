@@ -5,7 +5,5 @@ Try out our turnkey handover security tool !
 ## Quickstart
 ### Run SimpleScanner
 
-```
-docker run dcenters/simple-scanner
-
+```docker run dcenters/simple-scanner
 ```
